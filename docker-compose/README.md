@@ -7,33 +7,7 @@
 
 ## Deploy
 
-- Create a docker-compose.yaml file and copy the below configuration into the file.
-  ```yaml
-  version: '3.6'
-  services:
-    postgres:
-      image: postgres
-      environment:
-      - "POSTGRES_PASSWORD:mysecretpassword"
-      volumes:
-        - db_data:/var/lib/postgresql/data
-    raven:
-      image: hasuranightly/raven:94a0141
-      ports:
-      - "8080:8080"
-      links:
-      - "postgres:postgres"
-      command: >
-        /bin/sh -c "
-        sleep 5;
-        raven --database-url postgres://postgres:mysecretpassword@postgres:5432/postgres serve;
-        "
-  volumes:
-    db_data:
-
-  ```
-
-- Run `docker-compose up -d` to start the Hasura GraphQL Engine.
+- Run `docker-compose up -d` inside `docker-compose` directory to start the Hasura GraphQL Engine.
 
 ## Configure
 
