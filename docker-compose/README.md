@@ -20,7 +20,7 @@
     raven:
       image: hasuranightly/raven:94a0141
       ports:
-      - "9000:8080"
+      - "8080:8080"
       links:
       - "postgres:postgres"
       command: >
@@ -41,7 +41,7 @@
 
 - Edit `config.yaml` and add `endpoint`
   ```yaml
-  endpoint: http://localhost:9000
+  endpoint: http://localhost:8080
   ```
 
 ## Console
