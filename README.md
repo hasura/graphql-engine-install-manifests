@@ -1,4 +1,10 @@
-# Hasura GraphQL Engine Installation Manifests
+# Important: Moved to [hasura/graphql-engine](https://github.com/hasura/graphql-engine/tree/master/install-manifests)
+
+The contents of this repo have been moved to [hasura/graphql-engine](https://github.com/hasura/graphql-engine/tree/master/install-manifests). Please create any issues/pull requests there.
+
+---
+
+## Hasura GraphQL Engine Installation Manifests
 
 Various installation / deployment methods for Hasura GraphQL Engine
 
